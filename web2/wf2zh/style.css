@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+#tabla {
+    border-collapse: collapse;
+}
+#tabla td {
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+}
+.vetulet {
+    border: 1px solid orange;
+    min-width: 10px;
+    min-height: 10px;
+}
+table.vetulet {
+    border-spacing: 0;
+    display: inline-table;
+}
+table.vetulet td {
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+table.vetulet td.black {
+    background-color: lightgray;
+}
+div.vetulet {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+div.vetulet > div {
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+}
+div.vetulet > div > div {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+div.vetulet > div > p {
+    width: 10px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
